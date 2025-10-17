@@ -48,10 +48,10 @@ export const Hero = () => {
           {/* Quick Stats */}
           <div className="pt-8 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
             {[
-              { value: "5,000+", label: "Meals Shared" },
-              { value: "10", label: "Cities Reached" },
-              { value: "200+", label: "Volunteers" },
-              { value: "15+", label: "Programs" },
+              { value: "1000s", label: "Meals Shared" },
+              { value: "8", label: "States Reached" },
+              { value: "5", label: "Years Impact" },
+              { value: "Feb 14", label: "Annual Event" },
             ].map((stat, index) => (
               <div
                 key={index}

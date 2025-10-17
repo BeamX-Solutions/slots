@@ -86,27 +86,15 @@ export default function Contact() {
                 <CardContent className="pt-8 space-y-6">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                      <MapPin className="h-6 w-6 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold mb-2">Our Locations</h3>
-                      <p className="text-muted-foreground">
-                        Lagos Office: Ikeja, Lagos State<br />
-                        Abuja Office: Wuse, Federal Capital Territory
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
                       <Phone className="h-6 w-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-semibold mb-2">Phone</h3>
-                      <p className="text-muted-foreground">
-                        +234 XXX XXX XXXX<br />
-                        Monday - Friday, 9AM - 5PM WAT
-                      </p>
+                      <h3 className="font-semibold mb-2">Call Us</h3>
+                      <a href="tel:+2349041401167" className="text-primary hover:underline block">
+                        +234 904 140 1167
+                      </a>
+                      <p className="text-sm text-muted-foreground mt-2">Mmesoma Anita Ogbuagu</p>
+                      <p className="text-xs text-muted-foreground">SLOTS' 14 Convener</p>
                     </div>
                   </div>
 
@@ -116,10 +104,22 @@ export default function Contact() {
                     </div>
                     <div>
                       <h3 className="font-semibold mb-2">Email</h3>
-                      <p className="text-muted-foreground">
-                        General: info@slotsng.org<br />
-                        Partnerships: partners@slotsng.org<br />
-                        Volunteer: volunteer@slotsng.org
+                      <a href="mailto:info@slotsinitiatives.org" className="text-primary hover:underline block">
+                        info@slotsinitiatives.org
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                      <MapPin className="h-6 w-6 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold mb-2">We Serve</h3>
+                      <p className="text-muted-foreground text-sm">
+                        Anambra • Lagos • Abuja<br />
+                        Benin • Nasarawa • Enugu<br />
+                        Port Harcourt
                       </p>
                     </div>
                   </div>

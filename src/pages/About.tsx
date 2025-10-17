@@ -2,19 +2,19 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Heart, Target, Eye, Users } from "lucide-react";
 
 const milestones = [
-  { year: "2015", title: "SLOTS Founded", description: "Our journey began with a small team and big dreams" },
-  { year: "2016", title: "First Valentine's Event", description: "Reached 500 people in Lagos with love packages" },
-  { year: "2018", title: "Expansion to Abuja", description: "Extended our reach to Nigeria's capital" },
-  { year: "2020", title: "COVID-19 Response", description: "Provided essential supplies during the pandemic" },
-  { year: "2023", title: "10,000+ Lives Touched", description: "Celebrating milestone impact across Nigeria" },
-  { year: "2024", title: "Growing Stronger", description: "Continued expansion with new programs and partners" }
+  { year: "2020", title: "SLOTS' 14 Founded", description: "The SLOTS' 14 project started with the sole purpose of 'sharing love on the street' to those in need. First outreach in Anambra and Lagos on February 14th." },
+  { year: "2021", title: "Three States Reached", description: "Expanded operations to Anambra, Lagos, and Abuja. Community support growing through personal and public donations." },
+  { year: "2022", title: "Adding Enugu", description: "Extended love and support to Enugu, bringing the total to four states. Volunteer network continues to strengthen." },
+  { year: "2023", title: "Port Harcourt Joins", description: "Reached Port Harcourt alongside Anambra, Lagos, and Enugu. Impact spreading across southern Nigeria." },
+  { year: "2024", title: "Five State Outreach", description: "Historic expansion to Anambra, Lagos, Benin, Abuja, and Nasarawa. Thousands of meals distributed and countless lives touched." },
+  { year: "2025", title: "Looking Forward", description: "Planning SLOTS' 14 2025 with expanded reach and greater impact. Continuing the mission to share love on the streets every February 14th." }
 ];
 
 const team = [
-  { name: "Founder & Executive Director", role: "Leadership", image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&q=80" },
-  { name: "Programs Director", role: "Operations", image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80" },
-  { name: "Community Outreach Lead", role: "Field Work", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80" },
-  { name: "Volunteer Coordinator", role: "Engagement", image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80" }
+  { name: "Mmesoma Anita Ogbuagu", role: "SLOTS' 14 Convener", image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80" },
+  { name: "Volunteer Team", role: "Community Champions", image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80" },
+  { name: "Field Coordinators", role: "State Leaders", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80" },
+  { name: "Our Partners", role: "Supporting Organizations", image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80" }
 ];
 
 export default function About() {
@@ -26,7 +26,7 @@ export default function About() {
           <div className="max-w-3xl mx-auto text-center space-y-6 animate-fade-in">
             <h1>About SLOTS</h1>
             <p className="text-xl text-muted-foreground text-balance">
-              We are a community-driven humanitarian organization dedicated to Sharing Love On The Streets through compassionate action and sustainable impact.
+              SLOTS' 14 started in 2020 with the sole purpose of sharing love on the street to those in need. Each year on February 14th, we provide meals and necessities through personal and public donations.
             </p>
           </div>
         </div>
@@ -43,7 +43,7 @@ export default function About() {
                 </div>
                 <h3>Our Mission</h3>
                 <p className="text-muted-foreground">
-                  To bring hope, dignity, and practical support to vulnerable communities across Nigeria through direct outreach, food assistance, education initiatives, and community empowerment programs.
+                  To share love on the streets through our annual February 14th outreach, providing meals, clothing, blankets, and hygiene kits to those in need across Nigeria. Making people smile and feel loved.
                 </p>
               </CardContent>
             </Card>

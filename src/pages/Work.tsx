@@ -4,39 +4,32 @@ import { UtensilsCrossed, BookOpen, Heart, Shirt, Home, Users } from "lucide-rea
 
 const programs = [
   {
-    icon: UtensilsCrossed,
-    title: "Food Distribution Program",
-    description: "Providing nutritious meals and food packages to families and individuals in need across Lagos and Abuja.",
-    impact: "5,000+ meals distributed in 2024",
-    details: "Our flagship program delivers hot meals and food packages directly to communities. We partner with local vendors to ensure quality and cultural relevance. Every Thursday and Saturday, our teams visit designated areas to share love through food."
-  },
-  {
     icon: Heart,
-    title: "Valentine's Day Outreach",
-    description: "Annual street outreach spreading love with care packages, food, and personal items on Valentine's Day.",
-    impact: "2,000+ people reached annually",
-    details: "Our signature event transforms Valentine's Day into a community-wide celebration of compassion. Volunteers distribute love packages containing food, toiletries, and encouraging messages. This initiative has become a beloved tradition in our communities."
+    title: "SLOTS' 14 - Annual Valentine's Day Outreach",
+    description: "Our signature event held every February 14th, spreading love with meals, clothing, and care packages to those living on the streets.",
+    impact: "Thousands reached annually since 2020",
+    details: "The core mission of SLOTS. Each year on February 14th, we transform Valentine's Day into a community-wide celebration of compassion. Our teams distribute love packages containing meals, clothing, blankets, hygiene kits, and encouragement to individuals and families in need across multiple states."
   },
   {
-    icon: BookOpen,
-    title: "Education Support",
-    description: "Providing school supplies, books, and educational materials to underprivileged children.",
-    impact: "500+ students supported",
-    details: "We believe education is key to breaking cycles of poverty. Our program provides backpacks, notebooks, textbooks, and uniforms to students who would otherwise go without. We also organize tutoring sessions and mentorship programs."
+    icon: UtensilsCrossed,
+    title: "Meal Distribution",
+    description: "Providing nutritious meals and food packages to individuals and families living on the streets.",
+    impact: "Thousands of meals distributed",
+    details: "Our flagship program delivers hot meals and food packages directly to communities in need. We work to ensure everyone we meet on February 14th receives a warm meal and knows they are loved and valued."
   },
   {
     icon: Shirt,
-    title: "Clothing Drive",
-    description: "Collecting and distributing clean, quality clothing to those experiencing homelessness and poverty.",
-    impact: "3,000+ clothing items distributed",
-    details: "Dignity starts with basic needs. Our clothing drives collect gently used items which are cleaned, sorted, and distributed with respect and care. We host monthly distribution events and maintain a clothing bank for emergency needs."
+    title: "Clothing & Blankets",
+    description: "Distributing quality clothing and warm blankets to those experiencing homelessness and poverty.",
+    impact: "Essential supplies distributed annually",
+    details: "We provide clothing and blankets to enhance the well-being and dignity of those on the streets. During our February 14th outreach, we ensure everyone receives warm clothing and blankets to help them through difficult times."
   },
   {
     icon: Home,
-    title: "Shelter Support",
-    description: "Partnering with shelters to provide supplies, meals, and support services.",
-    impact: "10 partner shelters",
-    details: "We work closely with local shelters to provide essential supplies, hot meals, and volunteer support. Our team helps with cleaning, cooking, and organizing activities that bring joy and normalcy to residents' lives."
+    title: "Hygiene Kits",
+    description: "Providing personal hygiene supplies to promote health and dignity for those in need.",
+    impact: "Kits distributed across all outreach locations",
+    details: "Our hygiene kits include essential items like soap, toothpaste, towels, and other personal care products. We believe everyone deserves to maintain their dignity and health, regardless of their circumstances."
   },
   {
     icon: Users,
@@ -130,7 +123,9 @@ export default function Work() {
                 <Users className="h-12 w-12 text-primary mx-auto" />
                 <p className="text-muted-foreground">Interactive map coming soon</p>
                 <p className="text-sm text-muted-foreground">
-                  Primary locations: Lagos (Ikeja, Surulere, Ajah) • Abuja (Wuse, Kubwa, Nyanya)
+                  2024 Locations: Anambra • Lagos • Benin • Abuja • Nasarawa
+                  <br />
+                  Historical Reach: Port Harcourt • Enugu
                 </p>
               </div>
             </div>

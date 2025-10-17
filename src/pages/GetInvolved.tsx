@@ -56,57 +56,63 @@ export default function GetInvolved() {
               <Heart className="h-12 w-12 text-primary mx-auto mb-4 animate-heart-pulse" fill="currentColor" />
               <h2 className="mb-4">Make a Donation</h2>
               <p className="text-xl text-muted-foreground">
-                Your contribution directly funds meals, supplies, and programs
+                Support our mission to share love on the streets. Your donation contributes directly to our upcoming SLOTS' 14 events.
               </p>
             </div>
 
             <Card>
-              <CardContent className="pt-8">
-                <form onSubmit={handleDonateSubmit} className="space-y-6">
-                  <div>
-                    <Label className="text-base mb-4 block">Select Donation Amount</Label>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                      {[
-                        { amount: "$10", description: "Feeds 2 people" },
-                        { amount: "$25", description: "School supplies" },
-                        { amount: "$50", description: "Care package" },
-                        { amount: "$100", description: "Family support" }
-                      ].map((option, index) => (
-                        <Card key={index} className="cursor-pointer hover:border-primary hover:shadow-glow transition-all">
-                          <CardContent className="pt-6 text-center">
-                            <p className="text-2xl font-bold text-primary mb-1">{option.amount}</p>
-                            <p className="text-xs text-muted-foreground">{option.description}</p>
-                          </CardContent>
-                        </Card>
-                      ))}
+              <CardHeader>
+                <CardTitle>Bank Transfer Details</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-6">
+                {/* Bank Details */}
+                <div className="space-y-4 p-6 bg-muted/30 rounded-lg">
+                  <div className="flex justify-between items-center border-b border-border pb-3">
+                    <span className="text-muted-foreground">Account Name:</span>
+                    <span className="font-semibold">Slots Humanitarian Initiatives</span>
+                  </div>
+                  <div className="flex justify-between items-center border-b border-border pb-3">
+                    <span className="text-muted-foreground">Account Number:</span>
+                    <span className="font-semibold text-lg">1306638368</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-muted-foreground">Bank:</span>
+                    <span className="font-semibold">Providus Bank</span>
+                  </div>
+                </div>
+
+                {/* Donation Options */}
+                <div className="space-y-4 mt-6">
+                  <h3 className="font-semibold text-lg">Ways to Donate:</h3>
+                  <div className="space-y-3">
+                    <div className="flex items-start gap-3">
+                      <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <span className="text-primary text-sm font-bold">1</span>
+                      </div>
+                      <p className="text-muted-foreground">
+                        Donate One Hundred Thousand Naira (₦100,000) or more to support the project
+                      </p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <span className="text-primary text-sm font-bold">2</span>
+                      </div>
+                      <p className="text-muted-foreground">
+                        Sponsor a specific aspect of the project, such as meals, supplies, or transportation
+                      </p>
                     </div>
                   </div>
+                </div>
 
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <div className="space-y-2">
-                      <Label htmlFor="donor-name">Full Name</Label>
-                      <Input id="donor-name" placeholder="John Doe" required />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="donor-email">Email</Label>
-                      <Input id="donor-email" type="email" placeholder="john@example.com" required />
-                    </div>
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="custom-amount">Custom Amount ($)</Label>
-                    <Input id="custom-amount" type="number" placeholder="Enter custom amount" />
-                  </div>
-
-                  <Button type="submit" size="lg" className="w-full">
-                    <Heart className="mr-2 h-5 w-5" fill="currentColor" />
-                    Process Donation (Coming Soon)
-                  </Button>
-
-                  <p className="text-xs text-center text-muted-foreground">
-                    Secure payment processing powered by Stripe. Tax receipts provided for all donations.
+                {/* Contact for Donations */}
+                <div className="mt-6 p-4 bg-primary/5 border border-primary/10 rounded-lg">
+                  <p className="text-sm text-muted-foreground text-center">
+                    For inquiries or to confirm your donation, please contact us at{" "}
+                    <a href="tel:+2349041401167" className="text-primary font-semibold hover:underline">
+                      +234 904 140 1167
+                    </a>
                   </p>
-                </form>
+                </div>
               </CardContent>
             </Card>
           </div>
@@ -153,6 +159,9 @@ export default function GetInvolved() {
                         <SelectContent>
                           <SelectItem value="lagos">Lagos</SelectItem>
                           <SelectItem value="abuja">Abuja</SelectItem>
+                          <SelectItem value="anambra">Anambra</SelectItem>
+                          <SelectItem value="benin">Benin</SelectItem>
+                          <SelectItem value="nasarawa">Nasarawa</SelectItem>
                           <SelectItem value="other">Other</SelectItem>
                         </SelectContent>
                       </Select>

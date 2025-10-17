@@ -4,37 +4,37 @@ import { Button } from "@/components/ui/button";
 import { Download, Quote, TrendingUp, Users, Heart, Package } from "lucide-react";
 
 const impactStats = [
-  { label: "Total Meals Distributed", value: "5,234", icon: Package, color: "text-primary" },
-  { label: "Volunteers Engaged", value: "247", icon: Users, color: "text-primary" },
-  { label: "Communities Reached", value: "10", icon: Heart, color: "text-primary" },
-  { label: "Events Organized", value: "32", icon: TrendingUp, color: "text-primary" }
+  { label: "Meals Distributed", value: "1000s", icon: Package, color: "text-primary" },
+  { label: "Years of Impact", value: "5", icon: TrendingUp, color: "text-primary" },
+  { label: "States Reached", value: "8", icon: Heart, color: "text-primary" },
+  { label: "Annual Events", value: "1", icon: Users, color: "text-primary" }
 ];
 
 const programBreakdown = [
-  { name: "Food Distribution", percentage: 40, value: "40%" },
-  { name: "Education Support", percentage: 25, value: "25%" },
-  { name: "Clothing Drive", percentage: 20, value: "20%" },
-  { name: "Community Events", percentage: 15, value: "15%" }
+  { name: "Meals & Food Packages", percentage: 45, value: "45%" },
+  { name: "Clothing & Blankets", percentage: 25, value: "25%" },
+  { name: "Hygiene Kits", percentage: 20, value: "20%" },
+  { name: "Transportation & Logistics", percentage: 10, value: "10%" }
 ];
 
 const testimonials = [
   {
-    quote: "SLOTS gave my family hope when we had none. The meals and kindness kept us going through our darkest times.",
-    author: "Grace O.",
-    location: "Lagos",
-    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&q=80"
+    quote: "We distributed thousands of meals to individuals and families in need, bringing nourishment and hope to those who need it most.",
+    author: "SLOTS Team",
+    location: "Multiple States",
+    image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=400&q=80"
   },
   {
-    quote: "As a volunteer, I've witnessed firsthand how a simple act of giving can transform someone's entire day. This organization changed my life too.",
-    author: "Chidi M.",
-    location: "Abuja",
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&q=80"
+    quote: "Providing essential supplies such as clothing, blankets, and hygiene kits has enhanced the well-being of countless people living on the streets.",
+    author: "Volunteer Coordinator",
+    location: "Lagos & Abuja",
+    image: "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=400&q=80"
   },
   {
-    quote: "The school supplies my children received meant they could start the term with dignity and confidence. Thank you SLOTS.",
-    author: "Amaka L.",
-    location: "Lagos",
-    image: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&q=80"
+    quote: "Most of all, we made people smile and feel loved. Raising awareness about the importance of compassion in the community is our greatest achievement.",
+    author: "Mmesoma Anita Ogbuagu",
+    location: "SLOTS' 14 Convener",
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80"
   }
 ];
 
