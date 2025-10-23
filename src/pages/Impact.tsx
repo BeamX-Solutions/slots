@@ -2,13 +2,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Progress } from "@/components/ui/progress";
 import { Quote, TrendingUp, Users, Heart, Package, UtensilsCrossed, Shirt, Home, Calendar } from "lucide-react";
-import anambra2020 from "@/assets/anambra-lagos-2020.jpg";
-import anambra2020_II from "@/assets/anambra-lagos-2020-II.jpg";
-import anambra2020_III from "@/assets/anambra-lagos-2020-III.jpg";
-import anambra2020_IV from "@/assets/anambra-lagos-2020-IV.jpg";
-import anambra2021_I from "@/assets/anambra-lagos-2021-I.jpg";
-import anambra2021_II from "@/assets/anambra-lagos-2021-II.jpg";
-import anambra2021_III from "@/assets/anambra-lagos-2021-III.jpg";
 
 const programs = [
   {
@@ -53,13 +46,6 @@ const impactStats = [
   { label: "Years of Impact", value: "5", icon: TrendingUp, color: "text-primary" },
   { label: "States Reached", value: "8", icon: Heart, color: "text-primary" },
   { label: "Annual Events", value: "1", icon: Users, color: "text-primary" }
-];
-
-const programBreakdown = [
-  { name: "Meals & Food Packages", percentage: 45, value: "45%" },
-  { name: "Clothing & Blankets", percentage: 25, value: "25%" },
-  { name: "Hygiene Kits", percentage: 20, value: "20%" },
-  { name: "Transportation & Logistics", percentage: 10, value: "10%" }
 ];
 
 const testimonials = [
@@ -182,33 +168,6 @@ export default function Impact() {
         </div>
       </section>
 
-      {/* Program Breakdown */}
-      <section className="py-16 md:py-24 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="mb-4">Resource Allocation</h2>
-              <p className="text-xl text-muted-foreground">
-                How we distribute our impact across programs
-              </p>
-            </div>
-
-            <Card>
-              <CardContent className="pt-8 space-y-8">
-                {programBreakdown.map((program, index) => (
-                  <div key={index} className="space-y-3">
-                    <div className="flex justify-between items-center">
-                      <span className="font-medium">{program.name}</span>
-                      <span className="text-sm font-semibold text-primary">{program.value}</span>
-                    </div>
-                    <Progress value={program.percentage} className="h-3" />
-                  </div>
-                ))}
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
 
       {/* Our Journey Section */}
       <section className="py-16 md:py-24 bg-muted/30">
@@ -238,10 +197,10 @@ export default function Impact() {
                   </p>
                 </div>
                 <div className="grid grid-cols-2 gap-2 p-2">
-                  <img src={anambra2020} alt="SLOTS 2020 outreach in Anambra and Lagos" className="w-full h-full object-cover rounded" />
-                  <img src={anambra2020_II} alt="Volunteers distributing care packages in 2020" className="w-full h-full object-cover rounded" />
-                  <img src={anambra2020_III} alt="Community engagement 2020" className="w-full h-full object-cover rounded" />
-                  <img src={anambra2020_IV} alt="Sharing meals and supplies 2020" className="w-full h-full object-cover rounded" />
+                  <img src="images\anambra-lagos-2020-I.jpg"  alt="SLOTS 2020 outreach in Anambra and Lagos" className="w-full h-full object-cover rounded" />
+                  <img src="images\anambra-lagos-2020-II.jpg" alt="Volunteers distributing care packages in 2020" className="w-full h-full object-cover rounded" />
+                  <img src="images\anambra-lagos-2020-III.jpg" alt="Community engagement 2020" className="w-full h-full object-cover rounded" />
+                  <img src="images\anambra-lagos-2020-IV.jpg" alt="Sharing meals and supplies 2020" className="w-full h-full object-cover rounded" />
                 </div>
               </div>
             </Card>
@@ -250,9 +209,9 @@ export default function Impact() {
             <Card className="overflow-hidden">
               <div className="grid md:grid-cols-2 gap-0">
                 <div className="grid grid-cols-2 gap-2 p-2 md:order-1">
-                  <img src={anambra2021_I} alt="SLOTS 2021 team celebrating with community" className="w-full h-full object-cover rounded" />
-                  <img src={anambra2021_II} alt="Volunteers distributing love packages in 2021" className="w-full h-full object-cover rounded" />
-                  <img src={anambra2021_III} alt="Community outreach 2021" className="w-full h-full object-cover rounded col-span-2" />
+                  <img src="images\anambra-lagos-2021-I.jpg" alt="SLOTS 2021 team celebrating with community" className="w-full h-full object-cover rounded" />
+                  <img src="images\anambra-lagos-2021-II.jpg" alt="Volunteers distributing love packages in 2021" className="w-full h-full object-cover rounded" />
+                  <img src="images\anambra-lagos-2021-III.jpg" alt="Community outreach 2021" className="w-full h-full object-cover rounded col-span-2" />
                 </div>
                 <div className="bg-primary/5 p-8 flex flex-col justify-center md:order-2">
                   <div className="flex items-center gap-3 mb-4">
@@ -270,41 +229,78 @@ export default function Impact() {
               </div>
             </Card>
 
-            {/* 2022-2024 Timeline */}
-            <div className="grid md:grid-cols-3 gap-6">
-              <Card className="text-center p-6">
-                <Calendar className="h-10 w-10 text-primary mx-auto mb-4" />
-                <h3 className="text-2xl font-bold mb-3">2022</h3>
-                <p className="text-muted-foreground mb-2">
-                  <span className="font-semibold text-foreground">Anambra, Lagos, Enugu</span>
-                </p>
-                <p className="text-sm text-muted-foreground">
-                  Strengthening our presence in the Southeast
-                </p>
-              </Card>
+            {/* 2022 */}
+            <Card className="overflow-hidden">
+              <div className="grid md:grid-cols-2 gap-0">
+                <div className="bg-primary/5 p-8 flex flex-col justify-center">
+                  <div className="flex items-center gap-3 mb-4">
+                    <Calendar className="h-8 w-8 text-primary" />
+                    <h3 className="text-3xl font-bold">2022</h3>
+                  </div>
+                  <p className="text-lg mb-4">Strengthening our presence in the Southeast</p>
+                  <p className="text-muted-foreground mb-4">
+                    Locations: <span className="font-semibold text-foreground">Anambra, Lagos, Enugu</span>
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    With momentum from our early years, we solidified our footprint by incorporating Enugu into our outreach, deepening connections in the Southeast and empowering local volunteers to spread love on a broader scale.
+                  </p>
+                </div>
+                <div className="grid grid-cols-2 gap-2 p-2">
+                  <img src="images\anambra-lagos-2022-I.PNG"  alt="SLOTS 2022 outreach in Anambra and Lagos" className="w-full h-full object-cover rounded" />
+                  <img src="images\anambra-lagos-2022-II.PNG" alt="Volunteers distributing care packages in 2022" className="w-full h-full object-cover rounded" />
+                  <img src="images\anambra-lagos-2022-III.PNG" alt="Community engagement 2022" className="w-full h-full object-cover rounded col-span-2" />
+                </div>
+              </div>
+            </Card>
 
-              <Card className="text-center p-6">
-                <Calendar className="h-10 w-10 text-primary mx-auto mb-4" />
-                <h3 className="text-2xl font-bold mb-3">2023</h3>
-                <p className="text-muted-foreground mb-2">
-                  <span className="font-semibold text-foreground">Anambra, Lagos, Enugu, Port Harcourt</span>
-                </p>
-                <p className="text-sm text-muted-foreground">
-                  Reaching the South-South region
-                </p>
-              </Card>
+            {/* 2023 */}
+            <Card className="overflow-hidden">
+              <div className="grid md:grid-cols-2 gap-0">
+                <div className="grid grid-cols-2 gap-2 p-2 md:order-1">
+                  <img src="images\anambra-lagos-2023-I.PNG" alt="SLOTS 2023 team celebrating with community" className="w-full h-full object-cover rounded" />
+                  <img src="images\anambra-lagos-2023-II.PNG" alt="Volunteers distributing love packages in 2023" className="w-full h-full object-cover rounded" />
+                  <img src="images\anambra-lagos-2023-III.PNG" alt="Community outreach 2023" className="w-full h-full object-cover rounded col-span-2" />
+                </div>
+                <div className="bg-primary/5 p-8 flex flex-col justify-center md:order-2">
+                  <div className="flex items-center gap-3 mb-4">
+                    <Calendar className="h-8 w-8 text-primary" />
+                    <h3 className="text-3xl font-bold">2023</h3>
+                  </div>
+                  <p className="text-lg mb-4">Reaching the South-South region</p>
+                  <p className="text-muted-foreground mb-4">
+                    Locations: <span className="font-semibold text-foreground">Anambra, Lagos, Enugu, Port Harcourt</span>
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    Our growth accelerated as we bridged regions by including Port Harcourt, bringing our message of compassion to the South-South and forging new partnerships that amplified our impact nationwide.
+                  </p>
+                </div>
+              </div>
+            </Card>
 
-              <Card className="text-center p-6">
-                <Calendar className="h-10 w-10 text-primary mx-auto mb-4" />
-                <h3 className="text-2xl font-bold mb-3">2024</h3>
-                <p className="text-muted-foreground mb-2">
-                  <span className="font-semibold text-foreground">Anambra, Lagos, Benin, Abuja, Nasarawa</span>
-                </p>
-                <p className="text-sm text-muted-foreground">
-                  Our most expansive year yet
-                </p>
-              </Card>
-            </div>
+            {/* 2024 */}
+            <Card className="overflow-hidden">
+              <div className="grid md:grid-cols-2 gap-0">
+                <div className="bg-primary/5 p-8 flex flex-col justify-center">
+                  <div className="flex items-center gap-3 mb-4">
+                    <Calendar className="h-8 w-8 text-primary" />
+                    <h3 className="text-3xl font-bold">2024</h3>
+                  </div>
+                  <p className="text-lg mb-4">Our most expansive year yet</p>
+                  <p className="text-muted-foreground mb-4">
+                    Locations: <span className="font-semibold text-foreground">Anambra, Lagos, Benin, Abuja, Nasarawa</span>
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    Celebrating five years of transformation, we pushed boundaries further by reaching Benin and Nasarawa, uniting diverse communities in a powerful display of nationwide solidarity and enduring love.
+                  </p>
+                </div>
+                <div className="grid grid-cols-2 gap-2 p-2">
+                  <img src="images\anambra-lagos-2024-I.PNG"  alt="SLOTS 2024 outreach in Anambra and Lagos" className="w-full h-full object-cover rounded" />
+                  <img src="images\anambra-lagos-2024-II.PNG" alt="Volunteers distributing care packages in 2024" className="w-full h-full object-cover rounded" />
+                  <img src="images\anambra-lagos-2024-III.PNG" alt="Community engagement 2024" className="w-full h-full object-cover rounded col-span-2" />
+                </div>
+              </div>
+            </Card>
+            
           </div>
         </div>
       </section>
