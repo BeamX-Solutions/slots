@@ -105,8 +105,8 @@ export default function Contact() {
                     </div>
                     <div>
                       <h3 className="font-semibold mb-2">Email</h3>
-                      <a href="mailto:info@slotsinitiatives.org" className="text-primary hover:underline block">
-                        info@slotsinitiatives.org
+                      <a href="mailto:info@slotsng.org" className="text-primary hover:underline block">
+                        info@slotsng.org
                       </a>
                     </div>
                   </div>
