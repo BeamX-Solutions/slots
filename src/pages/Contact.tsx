@@ -1,9 +1,10 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Heart, Mail, MapPin, Phone, Facebook, Instagram, Send} from "lucide-react";
+import { XIcon } from "@/components/icons/XIcon";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, MapPin, Phone, Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 export default function Contact() {
@@ -152,22 +153,34 @@ export default function Contact() {
                   <p className="text-sm text-muted-foreground mb-4">
                     Stay connected for updates, events, and inspiring stories
                   </p>
-                  <div className="flex gap-3">
-                    <Button variant="outline" size="sm" asChild>
-                      <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                        Facebook
-                      </a>
-                    </Button>
-                    <Button variant="outline" size="sm" asChild>
-                      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                        Twitter
-                      </a>
-                    </Button>
-                    <Button variant="outline" size="sm" asChild>
-                      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                        Instagram
-                      </a>
-                    </Button>
+                  <div className="flex space-x-4">
+                    <a
+                      href="https://facebook.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                      aria-label="Facebook"
+                    >
+                      <Facebook className="h-5 w-5" />
+                    </a>
+                    <a
+                      href="https://x.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                      aria-label="X (formerly Twitter)"
+                    >
+                      <XIcon className="h-5 w-5" />
+                    </a>
+                    <a
+                      href="https://instagram.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                      aria-label="Instagram"
+                    >
+                      <Instagram className="h-5 w-5" />
+                    </a>
                   </div>
                 </CardContent>
               </Card>
