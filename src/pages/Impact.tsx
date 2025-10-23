@@ -1,8 +1,14 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Progress } from "@/components/ui/progress";
-import { Button } from "@/components/ui/button";
-import { Download, Quote, TrendingUp, Users, Heart, Package, UtensilsCrossed, Shirt, Home } from "lucide-react";
+import { Quote, TrendingUp, Users, Heart, Package, UtensilsCrossed, Shirt, Home, Calendar } from "lucide-react";
+import anambra2020 from "@/assets/anambra-lagos-2020.jpg";
+import anambra2020_II from "@/assets/anambra-lagos-2020-II.jpg";
+import anambra2020_III from "@/assets/anambra-lagos-2020-III.jpg";
+import anambra2020_IV from "@/assets/anambra-lagos-2020-IV.jpg";
+import anambra2021_I from "@/assets/anambra-lagos-2021-I.jpg";
+import anambra2021_II from "@/assets/anambra-lagos-2021-II.jpg";
+import anambra2021_III from "@/assets/anambra-lagos-2021-III.jpg";
 
 const programs = [
   {
@@ -204,29 +210,102 @@ export default function Impact() {
         </div>
       </section>
 
-      {/* Locations Section */}
+      {/* Our Journey Section */}
       <section className="py-16 md:py-24 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="mb-4">Where We Work</h2>
+            <h2 className="mb-4">Our Journey (2020-2024)</h2>
             <p className="text-xl text-muted-foreground">
-              Active programs across Nigeria, reaching communities in need
+              Five years of spreading love and making a difference across Nigeria
             </p>
           </div>
-          
-          <Card className="max-w-5xl mx-auto overflow-hidden">
-            <div className="aspect-video bg-muted flex items-center justify-center">
-              <div className="text-center space-y-2">
-                <Users className="h-12 w-12 text-primary mx-auto" />
-                <p className="text-muted-foreground">Interactive map coming soon</p>
-                <p className="text-sm text-muted-foreground">
-                  2024 Locations: Anambra • Lagos • Benin • Abuja • Nasarawa
-                  <br />
-                  Historical Reach: Port Harcourt • Enugu
-                </p>
+
+          <div className="max-w-6xl mx-auto space-y-12">
+            {/* 2020 */}
+            <Card className="overflow-hidden">
+              <div className="grid md:grid-cols-2 gap-0">
+                <div className="bg-primary/5 p-8 flex flex-col justify-center">
+                  <div className="flex items-center gap-3 mb-4">
+                    <Calendar className="h-8 w-8 text-primary" />
+                    <h3 className="text-3xl font-bold">2020</h3>
+                  </div>
+                  <p className="text-lg mb-4">The journey begins - our first Valentine's Day outreach</p>
+                  <p className="text-muted-foreground mb-4">
+                    Locations: <span className="font-semibold text-foreground">Anambra, Lagos</span>
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    In our inaugural year, we launched SLOTS with a simple yet powerful mission: to share love and provide essential support to those living on the streets.
+                  </p>
+                </div>
+                <div className="grid grid-cols-2 gap-2 p-2">
+                  <img src={anambra2020} alt="SLOTS 2020 outreach in Anambra and Lagos" className="w-full h-full object-cover rounded" />
+                  <img src={anambra2020_II} alt="Volunteers distributing care packages in 2020" className="w-full h-full object-cover rounded" />
+                  <img src={anambra2020_III} alt="Community engagement 2020" className="w-full h-full object-cover rounded" />
+                  <img src={anambra2020_IV} alt="Sharing meals and supplies 2020" className="w-full h-full object-cover rounded" />
+                </div>
               </div>
+            </Card>
+
+            {/* 2021 */}
+            <Card className="overflow-hidden">
+              <div className="grid md:grid-cols-2 gap-0">
+                <div className="grid grid-cols-2 gap-2 p-2 md:order-1">
+                  <img src={anambra2021_I} alt="SLOTS 2021 team celebrating with community" className="w-full h-full object-cover rounded" />
+                  <img src={anambra2021_II} alt="Volunteers distributing love packages in 2021" className="w-full h-full object-cover rounded" />
+                  <img src={anambra2021_III} alt="Community outreach 2021" className="w-full h-full object-cover rounded col-span-2" />
+                </div>
+                <div className="bg-primary/5 p-8 flex flex-col justify-center md:order-2">
+                  <div className="flex items-center gap-3 mb-4">
+                    <Calendar className="h-8 w-8 text-primary" />
+                    <h3 className="text-3xl font-bold">2021</h3>
+                  </div>
+                  <p className="text-lg mb-4">Expanding our reach</p>
+                  <p className="text-muted-foreground mb-4">
+                    Locations: <span className="font-semibold text-foreground">Anambra, Lagos, Abuja</span>
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    Our second year saw tremendous growth as we extended our mission to the nation's capital, touching more lives and building stronger community connections.
+                  </p>
+                </div>
+              </div>
+            </Card>
+
+            {/* 2022-2024 Timeline */}
+            <div className="grid md:grid-cols-3 gap-6">
+              <Card className="text-center p-6">
+                <Calendar className="h-10 w-10 text-primary mx-auto mb-4" />
+                <h3 className="text-2xl font-bold mb-3">2022</h3>
+                <p className="text-muted-foreground mb-2">
+                  <span className="font-semibold text-foreground">Anambra, Lagos, Enugu</span>
+                </p>
+                <p className="text-sm text-muted-foreground">
+                  Strengthening our presence in the Southeast
+                </p>
+              </Card>
+
+              <Card className="text-center p-6">
+                <Calendar className="h-10 w-10 text-primary mx-auto mb-4" />
+                <h3 className="text-2xl font-bold mb-3">2023</h3>
+                <p className="text-muted-foreground mb-2">
+                  <span className="font-semibold text-foreground">Anambra, Lagos, Enugu, Port Harcourt</span>
+                </p>
+                <p className="text-sm text-muted-foreground">
+                  Reaching the South-South region
+                </p>
+              </Card>
+
+              <Card className="text-center p-6">
+                <Calendar className="h-10 w-10 text-primary mx-auto mb-4" />
+                <h3 className="text-2xl font-bold mb-3">2024</h3>
+                <p className="text-muted-foreground mb-2">
+                  <span className="font-semibold text-foreground">Anambra, Lagos, Benin, Abuja, Nasarawa</span>
+                </p>
+                <p className="text-sm text-muted-foreground">
+                  Our most expansive year yet
+                </p>
+              </Card>
             </div>
-          </Card>
+          </div>
         </div>
       </section>
 
@@ -268,24 +347,6 @@ export default function Impact() {
         </div>
       </section>
 
-      {/* Annual Report CTA */}
-      <section className="py-16 md:py-24 bg-primary/5 border-y border-primary/10">
-        <div className="container mx-auto px-4">
-          <Card className="max-w-3xl mx-auto text-center">
-            <CardContent className="pt-12 pb-12 space-y-6">
-              <Download className="h-16 w-16 text-primary mx-auto" />
-              <h2 className="text-3xl">2024 Annual Report</h2>
-              <p className="text-xl text-muted-foreground">
-                Dive deeper into our impact with our comprehensive annual report
-              </p>
-              <Button size="lg" className="mt-4">
-                <Download className="mr-2 h-5 w-5" />
-                Download Report (Coming Soon)
-              </Button>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
     </div>
   );
 }
