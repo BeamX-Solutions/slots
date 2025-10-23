@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { Heart, Mail, MapPin, Phone, Facebook, Instagram, X } from "lucide-react";
+import { Heart, Mail, MapPin, Phone, Facebook, Instagram } from "lucide-react";
+import { XIcon } from "@/components/icons/XIcon";
 import logo from "@/assets/slots-logo.png";
 
 export const Footer = () => {
@@ -30,7 +31,7 @@ export const Footer = () => {
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="X (formerly Twitter)"
               >
-                <X className="h-5 w-5" />
+                <XIcon className="h-5 w-5" />
               </a>
               <a
                 href="https://instagram.com"
