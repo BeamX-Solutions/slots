@@ -9,7 +9,6 @@ import { Footer } from "@/components/Footer";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Work from "./pages/Work";
 import Impact from "./pages/Impact";
 import GetInvolved from "./pages/GetInvolved";
 import Blog from "./pages/Blog";
@@ -33,7 +32,6 @@ const App = () => (
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
-                <Route path="/work" element={<Work />} />
                 <Route path="/impact" element={<Impact />} />
                 <Route path="/involve" element={<GetInvolved />} />
                 <Route path="/blog" element={<Blog />} />
