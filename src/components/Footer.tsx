@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Heart, Mail, MapPin, Phone, Facebook, Instagram, Twitter } from "lucide-react";
+import { Heart, Mail, MapPin, Phone, Facebook, Instagram, X } from "lucide-react";
 import logo from "@/assets/slots-logo.png";
 
 export const Footer = () => {
@@ -24,13 +24,13 @@ export const Footer = () => {
                 <Facebook className="h-5 w-5" />
               </a>
               <a
-                href="https://twitter.com"
+                href="https://x.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
-                aria-label="Twitter"
+                aria-label="X (formerly Twitter)"
               >
-                <Twitter className="h-5 w-5" />
+                <X className="h-5 w-5" />
               </a>
               <a
                 href="https://instagram.com"
