@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/slots-logo.png";
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -27,7 +26,7 @@ export const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
             <img 
-              src={logo} 
+              src="/images/slots-logo.png" 
               alt="SLOTS Humanitarian Initiatives" 
               className="h-10 md:h-12 w-auto transition-transform group-hover:scale-105"
             />

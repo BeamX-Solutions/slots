@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { Heart, Mail, MapPin, Phone, Facebook, Instagram } from "lucide-react";
 import { XIcon } from "@/components/icons/XIcon";
-import logo from "@/assets/slots-logo.png";
 
 export const Footer = () => {
   return (
@@ -10,7 +9,7 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
           {/* Brand Section */}
           <div className="space-y-4">
-            <img src={logo} alt="SLOTS" className="h-12 w-auto" />
+            <img src="/images/slots-logo.png" alt="SLOTS" className="h-12 w-auto" />
             <p className="text-sm text-muted-foreground">
               Sharing Love On The Streets – One Act at a Time. Making a difference in communities across Nigeria.
             </p>
